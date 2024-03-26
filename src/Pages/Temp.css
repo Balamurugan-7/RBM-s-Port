@@ -1,0 +1,51 @@
+.Certree{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-top: 3vh;
+    /* background-color: aliceblue; */
+    width: 35vw;
+    /* clip-path:polygon(50% 0,100% 0, 100% 100%,50% 100%, 0 50%); */
+    /* border: 5px solid aliceblue; */
+}
+.tagbar{
+    position: absolute;
+    width: .08vw;
+    height: 90vh;
+    margin-left: 17vw;
+    border-right: .5vw solid green;
+    z-index: -1;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.tagright{
+    /* width: 35vw; */
+    width:18vw;
+    height: fit-content;
+    margin-left: 16vw;
+    background: url('../media/modtagright.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.certname1{
+    margin: 0;
+    width: fit-content;
+}
+.certname2{
+    margin: 0;
+    width: fit-content;
+}
+.tagleft{
+    /* width: 35vw; */
+    height: fit-content;
+    width:18vw;
+    margin-left: .58vw;
+    background: url('../media/modtagleft.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#certtext{
+    padding: 5vh;
+    text-align: center;
+    align-items: center;
+}

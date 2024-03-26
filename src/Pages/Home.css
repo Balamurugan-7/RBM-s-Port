@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuromancer:wght@300&display=swap');
+.wholecontainer{
+    display:flex;
+    width: 100vw;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.726);
+    cursor: url('../cursor2.png'),default;
+    overflow-x: hidden;
+    
+    /* background: url('../media/1000.jpg'); */
+    /* background: url('../media/1000.jpg') no-repeat center center fixed;
+    background-size: cover; */
+}
+.homecontainer{
+    font-family: "Neuromancer",cursive;
+    width: 100%;
+    /* background: url('../media/bg2.png') no-repeat center center fixed;
+    background-size: cover; */
+    /* cursor: url('../cursor.png'),auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #000000; */
+    overflow-x: hidden;
+}
+#video {
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+}
+video {
+    opacity: 1;
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+.introtitle{
+    font-family: font5;
+    padding: 0;
+    margin: 0;
+    z-index: 50;
+    color: white;
+    position: absolute;
+    font-size: 5vw;
+    top: 0;
+    width:98vw;
+    animation: Mywelcome 2s forwards;
+    transform:scaleX(0) scaleY(0);
+    animation-delay: 2.5s;
+}
+.wellimg{
+    top: 0;
+    z-index: 50;
+    height: 100vh;
+    width: 98.9vw;
+    position: absolute;
+    background:url('../media/ag.jpg');
+    background-position: center;
+    background-size: cover;
+    animation: Myfaderev 2s forwards;
+    animation-delay: .5s;
+}
+#home{
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* cursor: url('../cursor.png'); */
+}
+.HomeTitle{
+    font-size:x-large;
+    color: #ffffff;
+    text-align: left;
+}
+.professionname{
+    width: 100%;
+    font-size: larger;
+    font-family: font2;
+    border-top-left-radius: 50px;
+    padding-top: 1vh;
+    /* border-bottom-left-radius: 50px; */
+    background-image: transparent;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.541), rgb(0, 0, 0));
+}
+/* .welcome::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),#03dd27 0%,#03dd27 5%,transparent 5%,transparent 40%,#03dd27 50%);
+    animation: rotategrad 4s linear infinite;
+} */
+.welcome{
+    margin-left: 5%;
+    max-width: 60%;
+    height: max-content;
+    padding: 3%;
+    color: #ffffff;
+    /* border-color: rgb(255, 255, 255); */
+    box-shadow: 0 0 50px rgb(248, 248, 248);
+    /* border: 2px solid; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background:url('../media/matrix-hacker.jpg');
+    background-size: cover;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    font-size: 2vh;
+    cursor: url('../cur1.svg'),default;
+}
+.myname{
+    margin-bottom:0;
+    margin-top:2vh;
+    font-family:font1;
+    -webkit-box-reflect: below -3vh linear-gradient(transparent,transparent,#004);
+    /* margin-bottom:0;
+    margin-top:2vh;
+    font-family:font2;
+    -webkit-box-reflect: below -3vh linear-gradient(transparent,transparent,#004); */
+}
+#cvbutton{
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 80%;
+    display:flex;
+    text-decoration: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    align-items:center;
+    justify-content:center;
+    background-image: transparent;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 238, 238, 0.541), rgb(238, 238, 238));
+}
+#picturecontainer{
+    max-width: 30vw;
+    max-height: 50vh;
+    height: 30vw;
+    width: 28vw;
+    /* background-color: #05240aab;
+    border: 7px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(248, 248, 248);
+    filter: drop-shadow(0 0 50px rgb(110, 178, 110)); */
+}
+
+.picture{
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: .75;
+    
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    animation: Myfade 2s forwards;
+}
+.Skillsbox{
+    margin-top: 10vh;
+    width: 92vw;
+    height: 70vh;
+    margin-left: 8vw;
+    align-items: center;
+}
+.internshiptitle{
+    color: #ffffff;
+    width: 50vw;
+    margin-bottom: 5vh;
+}
+
+.corouselbox{
+    padding-top:20vh;
+    width:100vw;
+    height:70vh;
+    justify-items:'center';
+    background : url('../media/back.jpg') center fixed;
+    background-size:  cover;
+}
+
+@media (max-width: 440px) {
+    .wellimg{
+        background:url('../media/agmobile.jpg');
+        background-size: cover;
+    }
+    .introtitle{
+        font-size: 5vh;
+    }
+    #home{
+        flex-direction: column;
+    }
+    .HomeTitle{
+        font-size: 4vw;
+    }
+    .welcome{
+        max-width: unset;
+        width: max-content;
+    }
+    /* .myname{
+        font-size:xx-large;
+    } */
+    .professionname{
+        font-size:5vw;
+    }
+    #cvbutton{
+        font-size: 4vw;
+        font-weight: bolder;
+    }
+    #picturecontainer{
+        height: 30vh;
+        width: 45vh;
+    }
+    
+    .corouselbox{
+        padding-top:10vh;
+        width:100vw;
+        height:55vh;
+        justify-items:'center';
+        background-size:  cover;
+    }
+}
